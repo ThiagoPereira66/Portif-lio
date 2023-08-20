@@ -3,85 +3,109 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;900&display=swap"
         rel="stylesheet">
-    <title>Portfólio-DEV</title>
+    <title>TP.Dev</title>
 </head>
 
 <body>
-    <header>
-        <div id="titulo">
-            <h1>PORTFÓLIO<span class="dev">DEV</span></h1>
-            <h2>Thiago Pereira dos Santos</h2>
-        </div>
-        <div id="menu">
-            <a href="">HOME</a>
-            <a href="#projetos">PROJETOS</a>
-            <a href="#sobre">SOBRE</a>
-        </div>
-    </header>
-    <section class="apresentacao">
-        <div class="oq-faco">
-            <h3>WEB <sapn class="developer">DEVELOPER</sapn>
-            </h3>
-            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Ea eveniet veniam quos aliquid? Voluptates quasi dolorem
-                necessitatibus exercitationem, quos earum assumenda, nobis
-                magni facilis quae, voluptatibus officia nesciunt perspiciatis
-                magnam?</P>
-        </div>
-    </section>
-    <section class="conhecimentos">
-        <h4>CONHECIMENTO</h4>
-        <div class="imagens">
-            <img src="./img/html.png" alt="html">
-            <img src="./img/css.png" alt="css">
-            <img src="./img/js.png" alt="javascript">
-            <img src="./img/react.png" alt="react">
-        </div>
-    </section>
-    <section class="projetos">
-        <h4 id="projetos">PROJETOS</h4>
-        <div class="cards">
-            
-            <div class="card">
-                <p class="titulo-card"><a target="_blank" href="https://thiagopereira66.github.io/Relogio/">Relogio</a></p>
-                <img class="logo" src="./img/relogio.png" alt="relogio">
-                <p class="tecnologioas">tecnológias utilizadas</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
-                </ul>
+    <div id="principal">
+
+        <header>
+            <div class="rede">
+                <svg width="28" height="28" cursor="pointer" class="linkedin">
+                    <g clip-path="url(#clip0_3302_57044)">
+                        <path
+                            d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H24.89C25.2985 28 25.703 27.9195 26.0804 27.7632C26.4578 27.6068 26.8007 27.3776 27.0895 27.0887C27.3783 26.7999 27.6073 26.4569 27.7636 26.0795C27.9198 25.702 28.0001 25.2975 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07ZM9.333 21.778H5.41V10.888H9.334V21.778H9.333ZM7.302 8.893C6.102 8.893 5.302 8.093 5.302 7.026C5.302 5.959 6.1 5.16 7.433 5.16C8.633 5.16 9.433 5.96 9.433 7.026C9.433 8.094 8.633 8.893 7.301 8.893H7.302ZM23.333 21.778H19.535V15.826C19.535 14.18 18.522 13.801 18.142 13.801C17.762 13.801 16.497 14.054 16.497 15.826V21.778H12.572V10.888H16.497V12.408C17.002 11.522 18.015 10.888 19.914 10.888C21.814 10.888 23.334 12.408 23.334 15.826V21.778H23.333Z">
+                        </path>
+                    </g>
+                </svg>
+
+                <svg width="28" height="28" cursor="pointer" class="email">
+                    <path
+                        d="M2.8 3.00001C2.12163 2.99621 1.4654 3.24121 0.955496 3.68864C0.445591 4.13608 0.117389 4.7549 0.033 5.42801L14 14L27.967 5.42801C27.8826 4.7549 27.5544 4.13608 27.0445 3.68864C26.5346 3.24121 25.8784 2.99621 25.2 3.00001H2.8ZM0 8.15901V22.25C0 23.77 1.253 25 2.8 25H25.2C26.747 25 28 23.77 28 22.25V8.15901L14.741 16.296C14.5178 16.4323 14.2615 16.5043 14 16.5043C13.7385 16.5043 13.4822 16.4323 13.259 16.296L0 8.16001V8.15901Z">
+                    </path>
+                </svg>
+                <svg width="28" height="28" cursor="pointer">
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                    </path>
+                </svg>
             </div>
 
-            <div class="card">
-                <p class="titulo-card"><a target="_blank" href="https://thiagopereira66.github.io/Cron-nmetro/">Cronômetro</a></p>
-                <img class="logo" src="./img/cronômetro.png" alt="cronometro">
-                <p class="tecnologioas">tecnológias utilizadas</p>
+            <nav>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JAVASCRIPT</li>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="quem-sou">QUEM SOU</a></li>
+                    <li><a href="projetos">PROJETOS</a></li>
+                    <li><a href="contato">CONTATO</a></li>
                 </ul>
-            </div>
-        </div>
-    </section>
+            </nav>
+        </header>
 
-    <footer id="sobre">
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque, minima similique ab labore ad corrupti voluptate blanditiis dolorum, aliquam fugit autem nostrum, dolor maiores vel quisquam tempora accusamus. Quidem!
-        </p>
+        <section>
+            <div class="resumo">
+                <h1>Olá</h1><br>
+                <p>
+                    Sou Thiago Pereira, tenho 31 anos e moro na cidade de Uberlândia. Apaixonado por tecnologia desde
+                    jovem, finalizei o meu primeiro curso de programação no DEVCLUB, onde estudei a parte de FRONT-END,
+                    aprendi tecnologias como HTML, CSS, JAVASCRIPT, GIT/GITHUB, REACT, e desenvolvi algumas aplicações
+                    com elas.
+                </p><br>
+
+                <p>
+                    Busco trabalhos para aprimorar meus conhecimentos como desenvolvedor, e construir uma carreira
+                    solida nessa área.
+                </p><br>
+
+                <p>
+                    Atualmente estou fazendo a transição de carreira.
+                </p>
+
+            </div>
+
+            <div class="imagem">
+                <img src="./imagem/thiago pereira (1).png" alt="logo">
+            </div>
+
+            <div class="frase">
+                <p>
+                    "A única maneira de fazer algo excelente é amar o que você faz. Se você ainda não a encontrou,
+                    continue procurando. Não se acomode."
+                </p><br>
+                <p>- Steve Jobs -</p>
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="segunda">
+            <img src="./imagem/html.png" alt="logo-html">
+            <img src="./imagem/css.svg" alt="logo-CSS">
+            <img src="./imagem/javascript.svg" alt="logo-JS">
+            <img src="./imagem/react.jpg" alt="logo-react">
+        </section>
+        <hr>
         
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit neque, minima similique ab labore ad corrupti voluptate blanditiis dolorum, aliquam fugit autem nostrum, dolor maiores vel quisquam tempora accusamus. Quidem!
-        </p>
-    </footer>
+        <h2>PROJETOS CRIADOS </h2>
+
+        <section class="projetos">
+
+
+            <div class="descricao-projetos">
+                <img src="./imagem/Captura de tela 2023-08-18 160901.png" alt="projetos">
+                <img src="./imagem/cronômetro.png" alt="projetos">
+                <img src="./imagem/pokedex.png" alt="projetos">
+                <img src="./imagem/relogio.png" alt="projetos">
+            </div>
+        </section>
+
+    </div>
+
 </body>
 
 </html>
