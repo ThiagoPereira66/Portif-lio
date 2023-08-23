@@ -1,0 +1,54 @@
+@media screen and (max-width: 700px){
+    nav{
+        display: none;        
+    }
+    .rede{
+        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+   .inicio{
+    height: 984px;
+   }
+
+   .image{
+    width: 100%;
+    height: 40%;
+   }
+   .imagem img{
+    width: 100%;
+   }
+
+    .resumo{
+    position: absolute;
+    top: 400px;
+    width: 92%;
+    height: 28%;
+    z-index: 100;
+   }
+
+   .frase{
+    z-index: 50;
+    position: absolute;
+    width: 92%;
+    height: 10%;
+    top: 764px;
+   }
+   h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+   }
+   
+   .descricao-projetos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   .card{
+    width: 189px;
+    margin-bottom: 15px;
+   }
+}

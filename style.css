@@ -53,7 +53,8 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
+.inicio {
+    
     width: 100%;
     padding: 20px;
     display: flex;
@@ -89,12 +90,16 @@ img {
 }
 
 .segunda{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     padding: 55px;
 }
 
 
 .segunda img{
-    width: 10rem;
+    width: 15%;
 }
 
 hr{
@@ -105,7 +110,7 @@ hr{
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    margin: 50px 50%;
+    margin: auto;
     
 }
 
@@ -116,3 +121,74 @@ h2{
 .descricao-projetos h1{
     margin: 20px auto;
 }
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid black;
+    border-radius: 10px;
+   
+}
+
+.card img{
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 150px;
+    height: 150px;    
+}
+
+.card li{
+    list-style: none;
+    line-height: 27px;
+}
+
+.card button{
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.card button:hover{
+    background: black;
+    color: white;
+    border: none;
+    
+}
+
+.card button:active{
+    background: red;
+    color: greenyellow;
+}
+
+.card ol{
+    border-top: 1px solid black;
+    padding: 5px 0;
+    color: white;
+    
+}
+
+.projetos{
+    position:absolute;
+    background: rgba(63, 94, 73, 0.664);
+    width: 100%;
+}
+
+.descricao-projetos{
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
