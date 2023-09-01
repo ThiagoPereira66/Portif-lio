@@ -7,18 +7,22 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 #principal {
-    
+
     width: 100%;
     position: absolute;
-    
+
 
 }
 
 header {
-    width: 100%; 
-    height: 70px;   
+    
+    width: 100%;
+    height: 70px;
     padding: 10px 10px 0;
     align-items: center;
     text-align: center;
@@ -31,15 +35,9 @@ header {
 
 header .mini-logo {
     width: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.301);
-    border-radius: 23px;
     left: 30px;
-
 }
 
-.hr-reader {
-    width: 95vw;   
-}
 
 .img-menu {
     display: none;
@@ -77,7 +75,7 @@ ul {
 }
 
 .link-reader:hover {
-    transition-property: background;    
+    transition-property: background;
     transition-duration: 1s;
     transition-duration: 1s;
 
@@ -85,11 +83,28 @@ ul {
     border-bottom: 1px solid black;
 }
 
+#modal {
+    border: none;
+    background: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+#contato {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
 
 a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgba(0, 0, 0, 0.329);
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 a:hover {
@@ -97,40 +112,47 @@ a:hover {
 }
 
 .inicio {
+    
     display: flex;
     justify-content: space-between;
     margin: 50px 0;
     padding: 0 10px;
 }
 
-.banner{    
+.banner {
     position: fixed;
     width: 100%;
     height: 100%;
 }
 
-.banner2{
+.banner2 {
     display: none;
 }
+
 .resumo {
-    background: rgba(255, 255, 255, 0.712);
+    background: rgb(255, 255, 255, .9);
     padding: 10px;
     width: 30%;
     height: 15%;
     margin-top: 80px;
     border-radius: 11px;
-    box-shadow: 0px 0px 7px 0px black; 
+    box-shadow: 0px 0px 7px 0px black;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.resumo h1 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .frase {
-    background: rgba(255, 255, 255, 0.712);
+    background: rgba(255, 255, 255, .9);
     box-shadow: 0px 0px 7px 0px black;
     width: 30%;
     height: 10%;
     padding: 10px;
-    margin-top: 140px;    
+    margin-top: 140px;
     border-radius: 11px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .segunda {
@@ -158,7 +180,7 @@ hr {
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    text-align: center;    
+    text-align: center;
     color: white;
     margin-bottom: 20px;
 }
@@ -175,19 +197,20 @@ h2 {
 .card {
     display: flex;
     width: 200px;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     border-radius: 10px;
     background: rgba(48, 46, 46, 0.979);
 }
-.card:hover{
-    box-shadow: 0px 0px 7px 0px white;  
-    
+
+.card:hover {
+    box-shadow: 0px 0px 7px 0px white;
+
 }
 
 .card img {
-    
+
     border-radius: 10px;
     margin-bottom: 10px;
     width: 100%;
@@ -202,15 +225,15 @@ h2 {
 
 }
 
-.card h3{
+.card h3 {
     color: white;
     font-size: 1rem;
 }
 
-.card button {    
-    width: 100%;    
+.card button {
+    width: 100%;
     border-radius: 50px;
-    border: 1px solid rgb(53, 206, 53) ;
+    border: 1px solid rgb(53, 206, 53);
     margin: 10px 0;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -223,7 +246,7 @@ h2 {
     background: rgba(53, 206, 53, 0.596);
     color: white;
     border: none;
-    border: 1px solid rgb(53, 206, 53, 0.596) ;
+    border: 1px solid rgb(53, 206, 53, 0.596);
 
 }
 
@@ -233,16 +256,16 @@ h2 {
 }
 
 .card ol {
-    
+
     padding: 5px 0;
-   
+
 }
 
-.card a{    
+.card a {
     width: 90%;
 }
 
-.projetos {    
+.projetos {
     background: black;
     width: 100%;
     padding: 20px 0;
@@ -253,54 +276,55 @@ h2 {
     width: 100%;
     padding: 20px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 
-#footer {  
+#footer {
     display: flex;
-    flex-direction: column;     
+    flex-direction: column;
     align-items: center;
     padding-top: 20px;
     background: rgba(48, 46, 46, 0.979);
     border-top: 1px solid rgb(95, 89, 89);
 }
 
-footer .rede-menu{
+footer .rede-menu {
     display: flex;
     width: 30%;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-footer .rede{
+footer .rede {
     display: flex;
     flex-direction: column;
 }
 
-footer .conteudo{
+footer .conteudo {
     display: flex;
     flex-direction: column;
 }
 
-footer h4{
+footer h4 {
     color: rgb(155, 22, 22);
     margin-bottom: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
 }
 
-footer a{
+footer a {
     color: rgb(20, 19, 19);
     margin-bottom: 10PX;
 }
 
-footer p{
+footer p {
     margin-bottom: 30px;
-    font-family:'Times New Roman', Times, serif ;
+    font-family: 'Times New Roman', Times, serif;
     color: #666
 }
 
-footer .agradecimentos{
+footer .agradecimentos {
     width: 100%;
     padding: 0 0 0 20px;
 }

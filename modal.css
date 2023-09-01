@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;    
+}
+
+
+dialog::backdrop{       
+    background: rgba(0, 0, 0, 0.473);     
+}
+
+dialog{
+    position: fixed;
+    width: 500px;
+    max-width: 90%;
+    height: 500px;   
+    background: white;
+    margin: auto;
+    padding: 10px;
+    top: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cabecalho h1{   
+    margin-left: 30px;  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.form-caixa{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    margin: 3rem 0;    
+}
+
+.nome-email{
+    width: 16.8vw;
+    height: 10vh; 
+}
+
+.nome-email input{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 50px;
+    border: 1px solid rgb(119, 116, 116);    
+
+}
+
+.telefone, .assunto{
+    width: 16.8vw;  
+    height: 10vh;   
+}
+
+.assunto input{
+    width: 100%;
+    padding: 10px 5px ;
+    border-radius: 50px;
+    border: 1px solid rgb(119, 116, 116);    
+}
+
+.telefone input{
+    width: 80%;
+    padding: 10px 5px ;
+    border-radius: 50px;
+    border: 1px solid rgb(119, 116, 116);    
+
+}
+
+label{
+    font-size: .7rem;
+    margin-left: 10px;
+}
+
+
+dialog .svg{
+   width: 100%;
+   padding: 0 40px;   
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+dialog img{
+    width: 40px;
+    margin: auto;
+    position: relative;
+    top: 58px;
+}
+
+.botao{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.botao button{
+    border-radius: 50px;
+    padding: 5px 57px;
+    border: 1px solid green;
+    background: transparent;
+    cursor: pointer;   
+}
+
+.botao button:hover{
+    background: green;
+    color: white;
+}
+
+
+@media screen and (max-width: 980px) {
+    .form-caixa{
+        flex-direction: column;
+        gap: .3rem;
+        
+    }   
+
+    .nome-email, .telefone, .assunto{
+        width: 100%;
+
+    }
+    
+    .telefone input{
+        width: 100%;
+    }
+    
+    dialog{
+        height: 84vh;
+    }
+
+    .botao input{
+        margin-top: 1rem;
+    }
+    
+}
