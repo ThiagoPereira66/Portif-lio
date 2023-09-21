@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.conteiner{
+    position: relative;    
+    margin: auto;
+    max-width: 1350px;     
+    box-shadow: 0 0 19px 0 rgb(95, 95, 95);  
+}
+
+header{
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 2rem;
+    width: 100vw; 
+    max-width: 1348px;   
+    background: #fff;
+    border-bottom: 1px solid rgb(240, 238, 238);
+    
+}
+.menu{
+    display: flex;    
+}
+.menu-response img{
+    display: none;
+    width: 2rem;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 8rem;   
+    cursor: pointer;
+    border-radius: .2rem;
+}
+.links:hover{
+    box-shadow: inset 0 0 10px rgb(27, 16, 16);
+    transition: .6s;    
+}
+
+.links a, #contato{
+    text-decoration: none;
+    color: rgb(122, 120, 120);
+    font-size: 1rem;
+}
+
+h1{
+    font-family: initial;
+    line-height: 1rem;
+    text-align: right;
+    width: 18rem;
+}
+
+main{
+    padding-top: 7.5rem;
+}
+
+.topo{
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+    
+}
+
+.sobre{
+    width: 50%;      
+    margin-top: 5rem;
+    padding: 2rem;
+    
+}
+
+.redes{    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.tecnologias{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background-color: rgba(236, 236, 236, 0.966);   
+    border: none;
+}
+
+.tecnologias img{
+    max-width: 10vw;
+}
+
+.projetos{
+    background: #272727;
+    padding: 2rem 1rem 4rem;
+    
+}
+
+.projetos-titulo h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 5vw;
+    font-family: 'Roboto Serif', serif;
+    margin-bottom: 3rem;
+    
+}
+
+.card{
+    border-radius: 1rem;
+    padding: .5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    border-right: 1px solid rgba(255, 255, 255, 0.247);
+    width: 28vw;
+    margin-bottom: 3rem;        
+}
+
+#post-cards{     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card img{
+    width: 100%; 
+    height: 20%;   
+    border-radius:  1.2rem;
+}
+
+.descricao{        
+    padding: 1rem;
+    color: #ffffff9c;
+}
+.descricao p{
+    font-size: 1vw;
+}
+.tec{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.botao-card{    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-card button{
+    width: 10vw;
+    margin: .8rem 0;
+    padding: 3px 0;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: rgb(61, 51, 199);
+}
+.botao-card button:hover{
+    background:  rgba(61, 51, 199, 0.438);
+    border: 1px solid  rgb(50, 41, 170);
+    color: #fff;
+    
+}
+
+footer{
+    position: relative;
+    background-color: black;
+    padding: 5rem ;
+    border-top: 1px solid rgba(0, 128, 0, 0.26);
+}
+
+.menu-footer{
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    color: #aca4a4;
+}
+
+.redes-footer{
+    text-align: center;
+    margin-top: 2rem;    
+}
+.redes-footer a{
+    color: #aca4a4;
+    text-decoration:none ;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.redes-footer a:hover{
+    text-decoration: underline;
+}

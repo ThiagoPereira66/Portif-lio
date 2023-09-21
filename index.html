@@ -4,272 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/response.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./modal.css">
-    
-    <title>TP.Dev</title>
+    <title>PORTFÓLIO.dev</title>
 </head>
 
 <body>
-    
-    
-    <dialog id="dialog">
-        <div class="cabecalho">
-            <h1>CONTATO</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2rem" viewBox="0 0 30 30" cursor="pointer" id="close">
-                <path
-                    d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z">
-                </path>
-            </svg>
-        </div>
-        <div class="formulario">
-            <div class="form-caixa">
-                <div class="nome-email">
-                    <label for="name">SEU NOME</label>
-                    <input type="text" required name="nome" label="Seu Nome" placeholder="Digite seu nome" autofocus
-                        autocomplete="additional-name">
-                </div>
-                <div class="nome-email">
-                    <label for="email">E-MAIL</label>
-                    <input type="email" required name="email" label="email" placeholder="Ex: thiagopereira66@gmail.com"
-                        autocomplete="email">
-                </div>
-                <div class="telefone">
-                    <label for="namber">TELEFONE</label>
-                    <input type="text" required name="telefone" label="telefone" placeholder="(__)_________"
-                        maxlength="11" pattern="([0-9]{11})" autocomplete="cc-number">
-                </div>
-                <div class="assunto">
-                    <label for="text">ASSUNTO</label>
-                    <input type="text" required name="assunto" label="assunto" placeholder="Digite aqui">
-                </div>
-                <div class="botao">
-                    <button id="salvar">SALVAR</button>
-                </div>
+    <div class="conteiner">
+        <dialog>
+            <div class="header">
+                <h4>CONTATO</h4>
+                <img src="./imagem/botao-fechar.png" alt="fechar" style="width: 2rem; cursor: pointer;" id="fechar">
             </div>
-            <div class="svg">
-                <a href="https://github.com/ThiagoPereira66" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                    height="3em" viewBox="0 0 496 512">
-                    <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                </svg></a>
-                
-                <a href="https://www.linkedin.com/in/thiago-pereira66/" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512">
-                    <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                </svg></a>
-                
-                <a href="https://wa.me//5534988870598?text=Tenho%20interesse%20em%20conversar%20com%20você%20sobre%20seu%20trabalho"
-                target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512">
-                    <path
-                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                </svg></a>
-            </div>
-            
-        </div>
-        
-    </dialog>   
-       
-    <img class="banner" src="./imagem/banner.png" alt="logo">
-    <img class="banner2" src="./imagem/thiago pereira (1).png" alt="logo">
-    <div id="principal">
-        <header id="reader">
-            
-            <img class="mini-logo" src="./imagem/mini-logo.png" alt="logo">
-            
-            <img src="./imagem/Hamburger_icon.svg.png" alt="menu" class="img-menu" id="abrir-menu">
-            
-            <nav>
-                <ul>
-                    <div class="link-reader" id="nn">
-                        <a href="#">
-                            <li>HOME</li>
-                        </a>
+            <div class="formulario">
+                <form action="">
+                    <div class="nome">
+                        <label for="name">Nome</label>
+                        <input type="text" placeholder="Digite seu nome" required name="nome" label="seu nome" autofocus
+                            id="nome">
                     </div>
+                    <div class="e-mail">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" placeholder="Ex:thiagopereirasantos66@gmail.com" required name="email"
+                            label="e-mail" id="email">
+                    </div>
+                    <div class="telefone">
+                        <label for="telefopne">Telefone</label>
+                        <input type="text" placeholder="(__)__________" required name="telefone" label="Telefone"
+                            maxlength='11' pattern="([0-9]{11})" id="telefone">
+                    </div>
+                    <div class="assunto">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" placeholder="Digite sua pergunta" required name="assunto" label="Assunto"
+                            id="assunto">
+                    </div>
+                    <div class="botao">
+                        <button type="submit" onclick="enviarWatapp()" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
 
-                    <div class="link-reader" id="projetos">
-                        <a href="#projetos">
-                            <li>PROJETOS</li>
-                        </a>
-                    </div>
-                    <div class="link-reader" id="contato" >
-                        <li id="modal">CONTATO</li>
-                    </div>
-                </ul>
-            </nav>
+        <header>
+            <h1>THIAGO PEREIRA <span style="font-size: .5rem; font-family: sans-serif; color:#f44336;">- FRONT-END
+                    DEVELOPER -</span></h1>
+
+            <div class="menu">
+                <div class="links"><a href="#sobre">HOME</a></div>
+                <div class="links"><a href="#projetos">PROJETOS</a></div>
+                <div class="links" id="contato">CONTATO</div>
+            </div>
+            <div class="menu-response" id="mostar-menu">
+                <img src="./imagem/menu-icon.png" alt="menu">
+            </div>
         </header>
 
-        <section class="inicio">
-            <div class="resumo" id="quem-sou">
-                <h1>Olá</h1><br>
-                <p>
-                    Sou Thiago Pereira, tenho 31 anos e moro na cidade de Uberlândia. Apaixonado por tecnologia desde
-                    jovem, finalizei o meu primeiro curso de programação no DEVCLUB, onde estudei a parte de FRONT-END,
-                    aprendi tecnologias como HTML, CSS, JAVASCRIPT, GIT/GITHUB, REACT, e desenvolvi algumas aplicações
-                    com elas.
-                </p><br>
+        <main>
+            <section class="topo" id="sobre">
+                <div class="logo"><img src="./imagem/mini-logo.png" alt="logo"></div>
+                <div class="sobre">
+                    <h2>DESENVOLVEDOR <br>FRONT-END.</h2>
 
-                <p>
-                    Busco trabalhos para aprimorar meus conhecimentos como desenvolvedor, e construir uma carreira
-                    solida nessa área.
-                </p><br>
+                    <p>Sou Thiago Pereira, tenho 31 anos e moro na cidade de Uberlândia. Apaixonado por tecnologia desde
+                        jovem, finalizei o meu primeiro curso de programação no DEVCLUB, onde estudei a parte de
+                        FRONT-END,
+                        aprendi tecnologias como <span style="font-weight: bold;">HTML, CSS, JAVASCRIPT, GIT/GITHUB,
+                            REACT</span>, e desenvolvi algumas aplicações
+                        com elas.</p>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/thiago-pereira66/" target="_blank"><img
+                                src="./imagem/linkedin.png" alt="linkedin-link" style="max-width: 5vw;"></a>
+                        <a href="https://github.com/ThiagoPereira66" target="_blank"><img src="./imagem/github.png"
+                                alt="github-link" style="max-width: 5vw;"></a>
+                        <a href="https://web.whatsapp.com/send?phone=5534988870598" target="_blank"><img
+                                src="./imagem/whatsapp.png" alt="whatsapp-link" style="max-width: 5vw;"></a>
+                    </div>
+                </div>
+            </section>
 
+            <section class="tecnologias">
+                <img src="./imagem/html.png" alt="logo-html">
+                <img src="./imagem/css.svg" alt="logo-css">
+                <img src="./imagem/javascript.svg" alt="logo-javascript">
+                <img src="./imagem/react.jpg" alt="logo-react">
+            </section>
+
+            <section class="projetos" id="projetos">
+                <div class="projetos-titulo" id="projetos">
+                    <h2>PROJETOS</h2>
+                </div>
+                <div id='post-cards'></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="menu-footer">
                 <p>
-                    Atualmente estou fazendo a transição de carreira.
+                    Thiago pereira <span style="font-weight: bold;">desenvolvedor FRONT-END</span>, com conhecimentos
+                    nas tecnologias
+                    <span style="font-weight: bold;">HTML | CSS | JAVASCRIPT | REACT | GIT/GITHUB !</span>
                 </p>
-
             </div>
 
-
-
-            <div class="frase">
-                <p>
-                    "A única maneira de fazer algo excelente é amar o que você faz. Se você ainda não a encontrou,
-                    continue procurando. Não se acomode."
-                </p><br>
-                <p>- Steve Jobs -</p>
+            <div class="redes-footer">
+                <a href="https://www.linkedin.com/in/thiago-pereira66/" target="_blank">linkedin</a>
+                <a href="https://github.com/ThiagoPereira66" target="_blank">GITHUB</a>
+                <a href="https://web.whatsapp.com/send?phone=5534988870598" target="_blank">whatsapp</a>
             </div>
-
-        </section>
-
-        <section class="segunda">
-            <img src="./imagem/html.png" alt="logo-html">
-            <img src="./imagem/css.svg" alt="logo-CSS">
-            <img src="./imagem/javascript.svg" alt="logo-JS">
-            <img src="./imagem/react.jpg" alt="logo-react">
-        </section>
-
-        <section class="projetos">
-            <h2 id="projetos">PROJETOS CRIADOS </h2>
-
-
-            <div class="descricao-projetos">
-                <div class="card">
-                    <img src="./imagem/Captura de tela 2023-08-18 160901.png" alt="projetos">
-                    <h3>CLIMA</h3>
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ol>
-                    <a href="https://thiagopereira66.github.io/clima/" target="_blank">
-                        <button type="button">CONFERIR</button>
-                    </a>
-                    <a href="https://github.com/ThiagoPereira66/clima" target="_blank">
-                        <button type="button">REPOSITÓRIO</button>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <img src="./imagem/relogio.png" alt="projetos">
-                    <h3>RELÓGIO</h3>
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ol>
-                    <a href="https://thiagopereira66.github.io/Relogio/" target="_blank">
-                        <button type="button">CONFERIR</button>
-                    </a>
-                    <a href="https://github.com/ThiagoPereira66/Relogio" target="_blank">
-                        <button type="button">REPOSITÓRIO</button>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <img src="./imagem/pokedex.png" alt="projetos">
-                    <h3>POKEDEX</h3>
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ol>
-                    <a href="https://thiagopereira66.github.io/pokedex/" target="_blank">
-                        <button type="button">CONFERIR</button>
-                    </a>
-                    <a href="https://github.com/ThiagoPereira66/pokedex" target="_blank">
-                        <button type="button">REPOSITÓRIO</button>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <img src="./imagem/cronômetro.png" alt="projetos">
-                    <h3>CRONÔMETRO</h3>
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ol>
-                    <a href="https://thiagopereira66.github.io/Cron-nmetro/" target="_blank">
-                        <button type="button">CONFERIR</button>
-                    </a>
-                    <a href="https://github.com/ThiagoPereira66/Cron-nmetro" target="_blank">
-                        <button type="button">REPOSITÓRIO</button>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <footer id="footer">
-            <div class="rede-menu">
-                <div class="rede">
-                    <h4>REDE</h4>
-                    <div class="redesContato">
-                        <a href="https://www.linkedin.com/in/thiago-pereira66/" target="_blank">
-                            <svg width="28" height="28" cursor="pointer" class="linkedin">
-                                <g clip-path="url(#clip0_3302_57044)">
-                                    <path
-                                        d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H24.89C25.2985 28 25.703 27.9195 26.0804 27.7632C26.4578 27.6068 26.8007 27.3776 27.0895 27.0887C27.3783 26.7999 27.6073 26.4569 27.7636 26.0795C27.9198 25.702 28.0001 25.2975 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07ZM9.333 21.778H5.41V10.888H9.334V21.778H9.333ZM7.302 8.893C6.102 8.893 5.302 8.093 5.302 7.026C5.302 5.959 6.1 5.16 7.433 5.16C8.633 5.16 9.433 5.96 9.433 7.026C9.433 8.094 8.633 8.893 7.301 8.893H7.302ZM23.333 21.778H19.535V15.826C19.535 14.18 18.522 13.801 18.142 13.801C17.762 13.801 16.497 14.054 16.497 15.826V21.778H12.572V10.888H16.497V12.408C17.002 11.522 18.015 10.888 19.914 10.888C21.814 10.888 23.334 12.408 23.334 15.826V21.778H23.333Z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="redesContato">
-                        <svg width="28" height="28" cursor="pointer" class="email">
-                            <path
-                                d="M2.8 3.00001C2.12163 2.99621 1.4654 3.24121 0.955496 3.68864C0.445591 4.13608 0.117389 4.7549 0.033 5.42801L14 14L27.967 5.42801C27.8826 4.7549 27.5544 4.13608 27.0445 3.68864C26.5346 3.24121 25.8784 2.99621 25.2 3.00001H2.8ZM0 8.15901V22.25C0 23.77 1.253 25 2.8 25H25.2C26.747 25 28 23.77 28 22.25V8.15901L14.741 16.296C14.5178 16.4323 14.2615 16.5043 14 16.5043C13.7385 16.5043 13.4822 16.4323 13.259 16.296L0 8.16001V8.15901Z">
-                            </path>
-                        </svg>
-                    </div>
-
-                    <div class="redesContato">
-                        <a href="https://github.com/ThiagoPereira66" target="_blank">
-                            <svg width="28" height="28" cursor="pointer">
-                                <path
-                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="conteudo">
-                    <h4>MENU</h4>
-                    <a href="#reader">HOME</a>
-                    <a href="#quem-sou">QUEM SOU</a>
-                    <a id="modal1" >CONTATO</a>
-                </div>
-            </div>
-            <div class="agradecimentos">
-                <p>Copyright © Thiago Pereira dev front-end</p>
-            </div>
-
-
+            <p style="color:#aca4a498; margin-top: 4rem; font-size: .9vw;font-family: 'Times New Roman', Times, serif;">Copyright © 2023 Thiago Pereria Dev</p>
         </footer>
     </div>
 
-
-
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

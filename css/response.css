@@ -1,0 +1,67 @@
+@media screen and (max-width: 750px){
+    .menu{
+        display: none;
+    }
+
+    .menu-response img{
+        display: block;
+    }
+    
+    header h1{
+        font-size: 6vw;
+        width: 55vw;
+    }
+    header span{
+        font-size: 2.8vw;
+    }
+
+    .logo img{
+        position: relative;
+        width: 85vw;
+        margin-top: 9rem;
+        
+    }
+    .sobre{
+        width: 98vw;
+        margin-bottom: 6rem;
+    }
+
+    .card{
+        display: flex;
+        width: 90vw;
+    }
+
+    .imagem{
+        width: 55vw
+    }
+    .imagem img{
+        height: 10vh;
+    }
+
+    .botao-card{
+        display: flex;
+        flex-wrap: wrap;
+        width: 31vw
+    }
+
+    .botao-card button{
+        width: 100%;
+        background: none;
+        color: #696868;
+    }
+
+    .redes img{
+        width: 4vw;
+    }
+
+
+    footer{
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+    
