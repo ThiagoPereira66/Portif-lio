@@ -151,6 +151,11 @@ main{
     margin-top: 2rem;
 }
 
+.tec img{
+    width: 3rem;
+    border-radius: 0;
+}
+
 .botao-card{    
     text-align: center;
     display: flex;

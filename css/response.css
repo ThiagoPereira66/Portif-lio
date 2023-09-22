@@ -1,67 +1,97 @@
-@media screen and (max-width: 750px){
-    .menu{
-        display: none;
+@media screen and (max-width: 750px) {
+    .menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 62px;
+        width: 40vw;
+        height: 0;
+        transition: .6s;
+        display: flex;        
+        gap: 2rem;
+        flex-direction: column;
+
+        padding-top: 2rem;
+        border: none;
+        background-color: aliceblue;
+        box-shadow: inset 0px 0px 4px 0px #48424252;
+        visibility: hidden;
+        overflow-y: hidden;
+
     }
 
-    .menu-response img{
+    .menu.active {
+        height: 15rem;        
+        visibility: visible;
+    }
+
+    .menu-response img {
         display: block;
     }
-    
-    header h1{
+
+    header h1 {
         font-size: 6vw;
         width: 55vw;
     }
-    header span{
+
+    header span {
         font-size: 2.8vw;
     }
 
-    .logo img{
+    .logo img {
         position: relative;
         width: 85vw;
         margin-top: 9rem;
-        
+
     }
-    .sobre{
+
+    .sobre {
         width: 98vw;
         margin-bottom: 6rem;
     }
 
-    .card{
-        display: flex;
+    .card {
         width: 90vw;
     }
 
-    .imagem{
-        width: 55vw
-    }
-    .imagem img{
-        height: 10vh;
+    .imagem img {
+        height: 10rem;
     }
 
-    .botao-card{
+    .descricao p,
+    .card-titulo h3 {
+        margin-bottom: 1rem;
+        font-size: 4vw;
+    }
+
+    .tec img {
+        width: 12vw;
+        border-radius: 0;
+    }
+
+
+    .botao-card {
         display: flex;
-        flex-wrap: wrap;
-        width: 31vw
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 .5rem;
     }
 
-    .botao-card button{
-        width: 100%;
+    .botao-card button {
+        width: 7rem;
         background: none;
         color: #696868;
+        border: 1px solid rgb(65, 65, 167);
     }
 
-    .redes img{
+    .redes img {
         width: 4vw;
     }
 
 
-    footer{
-        font-size: 2vw;
+    footer {
+        font-size: 3vw;
+        padding: 1rem;
     }
+
 }
-
-
-
-
-
-    

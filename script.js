@@ -110,13 +110,13 @@ const cardsProjetos = `
                     </div>
                     <div class="descricao">
                         <div class="card-titulo" style="text-align: center;">
-                            <h3 style="font-size: 1.5vw; color: azure; font-weight: bold;">${cartoes.nome}</h3>
+                            <h3 style="color: azure; font-weight: bold;">${cartoes.nome}</h3>
                         </div>
                         <p>${cartoes.descricao}</p>
                         <div class='tec'>
-                            <img src='${cartoes.tecnologia1}' alt='imagens-das-tecnologias' style='width: 2vw;'>
-                            <img src='${cartoes.tecnologia2}' alt='imagens-das-tecnologias' style='width: 2vw;'>
-                            <img src='${cartoes.tecnologia3}' alt='imagens-das-tecnologias' style='width: 2vw;'> 
+                            <img src='${cartoes.tecnologia1}' alt='imagens-das-tecnologias' '>
+                            <img src='${cartoes.tecnologia2}' alt='imagens-das-tecnologias' '>
+                            <img src='${cartoes.tecnologia3}' alt='imagens-das-tecnologias' '> 
                         </div>
                     </div>
                     <div class="botao-card">
