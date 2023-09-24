@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){
+    .nome,
+    .e-mail,
+    .telefone,
+    .assunto{
+        width: 98vw;
+    }
+
+    .header{
+        display: flex;
+        
+    }
+
+    .header h4{
+        font-size: 7vw;
+        margin-left: 20vw;
+    }
+}
